@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:36:51 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/10 15:27:38 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/11 13:58:13 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,21 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned int	x;
+	int		x;
+	char	*str;
+	char	cc;
 
+	str = (char *)s;
+	cc = (char)c;
 	x = 0;
-	while (s[x])
+	while (str[x] != '\0')
 	{
-		if (s[x] == c)
-			return ((char *)&s[x]);
+		if (str[x] == (char)cc)
+			return ((char *)&str[x]);
 		x++;
 	}
-	if (!c)
-		return ((char *)&s[x]);
+	if (cc == '\0')
+		return ((char *)&str[x]);
 	return (0);
 }
 

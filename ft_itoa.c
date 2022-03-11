@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 15:28:51 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/04 16:07:23 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/11 12:20:07 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_itoa(int n)
 
 	i = ft_len(n);
 	sign = 1;
-	res = (char *)malloc(sizeof(char) * (i + 1));
+	res = malloc(sizeof(char) * (i + 1));
 	if (!res)
 		return (NULL);
 	res[i] = 0;
