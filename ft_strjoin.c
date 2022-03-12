@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 18:28:07 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/09 15:19:01 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 13:55:38 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned int		x;
-	unsigned int		y;
-	char				*str;
+	size_t		x;
+	size_t		y;
+	char		*str;
 
 	if (!s1 || !s2)
 		return (0);

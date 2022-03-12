@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 15:44:35 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/04 15:28:01 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 13:33:57 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int	x;
+	size_t	x;
 
 	x = 0;
 	if (s != NULL && f != NULL)

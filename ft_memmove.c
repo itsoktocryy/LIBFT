@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:37:32 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/09 15:39:55 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:55:42 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			x;
+	size_t	x;
 
 	x = 0;
 	if (!dst && !src)

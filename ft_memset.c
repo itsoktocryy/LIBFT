@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:38:12 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/04 15:56:43 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:55:56 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*str;
-	unsigned int	x;
+	size_t			x;
 
 	x = 0;
 	str = (unsigned char *)b;

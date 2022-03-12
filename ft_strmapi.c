@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 15:16:36 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/04 16:03:03 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 13:59:58 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s || !f)
 		return (NULL);
-	output = malloc(sizeof(*output) * ft_strlen(s) + 1);
+	output = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!output)
 		return (NULL);
 	x = 0;

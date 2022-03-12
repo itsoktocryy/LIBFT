@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 19:56:37 by rzachara          #+#    #+#             */
-/*   Updated: 2022/01/30 19:23:08 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 13:51:52 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s, fd);
+	if (s != NULL)
+		write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }
 

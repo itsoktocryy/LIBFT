@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:37:11 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/11 03:02:50 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/11 23:53:09 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,37 +14,38 @@
 
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 {
-	size_t	len_dst;
-	size_t	len_src;
-	size_t	res;
+	size_t	dst_len;
+	size_t	src_len;
 	size_t	x;
+	size_t	i;
+	size_t	res;
 
-	len_dst = ft_strlen(dst);
-	len_src = ft_strlen(src);
-	res = 0;
+	i = ft_strlen(dst);
 	x = 0;
-	if (dstsize == 0)
-		return (len_src);
-	if (dstsize > len_dst)
-		res = len_dst + len_src;
-	else
-		res = dstsize + len_src;
-	while (src[x] && len_dst < dstsize - 1)
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
+	if (dstsize < 1)
+		return (src_len + dstsize);
+	while (src[x] && i < dstsize - 1)
 	{
-		dst[len_dst] = src[x];
-		len_dst++;
+		dst[i] = src[x];
+		i++;
 		x++;
 	}
-	dst[len_dst] = '\0';
+	dst[i] = '\0';
+	if (dstsize < dst_len)
+		res = src_len + dstsize;
+	else
+		res = dst_len + src_len;
 	return (res);
 }
 
 // int main()
 // {
-//      char src[20] = "helloworld";
-//      char dst[20] = "tryme"; 
-//      ft_strlcat(dst, src, 0);
-// 	 printf("%s\n", dst);
-// 	 strlcat(dst, src, 0);
-// 	 printf("%s", dst);
+//     char src[10] = "helloworld";
+//     char dst[50] = "tryme";   
+//     ft_strlcat(dst, src, 16);
+//     printf("%s\n", dst);
+// 	strlcat(dst, src, 16);
+// 	printf("%s\n", dst);
 // }

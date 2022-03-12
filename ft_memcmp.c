@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:36:29 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/06 16:38:39 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/11 14:43:27 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 // int main()
 // {
-//     char st1[] = "9";
-//     char st2[] = "8";
-//     printf("%d\n", ft_memcmp(st1, st2, 5));
-//     printf("%d\n", memcmp(st1, st2, 5));
+//     char st1[] = "itsok";
+//     char st2[] = "itsokto";
+//     printf("%d\n", ft_memcmp(st1, st2, 11));
+//     printf("%d\n", memcmp(st1, st2, 11));
 //     return (0);
 // }

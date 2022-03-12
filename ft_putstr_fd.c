@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 19:36:07 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/04 15:57:16 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 13:52:08 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned int	x;
-
-	if (!s)
-		return ;
-	x = 0;
-	while (s[x])
-	{
-		ft_putchar_fd(s[x], fd);
-		x++;
-	}
+	if (s != NULL)
+		write(fd, s, ft_strlen(s));
 }
 
 // int main()

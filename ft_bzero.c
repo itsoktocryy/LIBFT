@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:37:54 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/08 13:31:10 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:56:48 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*str;
-	unsigned int	x;
+	size_t			x;
 
 	x = 0;
 	str = (unsigned char *)s;
@@ -30,6 +30,6 @@ void	ft_bzero(void *s, size_t n)
 // {
 //     char str[] = "hello world";
 //     puts(str);
-//     ft_bzero(str, 5);
+//     ft_bzero(str, 0);
 // 	puts(str);
 // }

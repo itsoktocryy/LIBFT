@@ -6,13 +6,13 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 15:15:50 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/10 15:13:51 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 14:04:03 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	freeall(char **s, size_t size)
+static void	ft_freeall(char **s, size_t size)
 {
 	size_t	i;
 
@@ -25,7 +25,7 @@ static void	freeall(char **s, size_t size)
 	free(s);
 }
 
-static char	**get_res(char const *s, char c)
+static char	**ft_get_res(char const *s, char c)
 {
 	size_t	count;
 	char	**res;
@@ -44,14 +44,15 @@ static char	**get_res(char const *s, char c)
 			is_word = 0;
 		s++;
 	}
-	res = malloc(sizeof(*res) * (count + 1));
+	res = malloc(sizeof(char*) * (count + 1));
 	if (!res)
-		return (0);
+		return (NULL);
 	res[count] = 0;
+	count--;
 	return (res);
 }
 
-static char	*get_word(char const *s, char c)
+static char	*ft_get_word(char const *s, char c)
 {
 	size_t	len;
 	char	*word;
@@ -59,14 +60,14 @@ static char	*get_word(char const *s, char c)
 	len = 0;
 	while (s[len] && s[len] != c)
 		len++;
-	word = malloc(sizeof(*word) * (len + 1));
+	word = malloc(sizeof(char) * (len + 1));
 	if (!word)
-		return (0);
+		return (NULL);
 	ft_strlcpy(word, s, len + 1);
 	return (word);
 }
 
-static char	**get_split(char **res, char const *s, char c)
+static char	**ft_get_split(char **res, char const *s, char c)
 {
 	size_t	word;
 	size_t	i;
@@ -79,10 +80,10 @@ static char	**get_split(char **res, char const *s, char c)
 			i++;
 		if (s[i])
 		{
-			res[word] = get_word(s + i, c);
+			res[word] = ft_get_word(&s[i], c);
 			if (!res[word])
 			{
-				freeall(res, word);
+				ft_freeall(res, word);
 				return (NULL);
 			}
 			word++;
@@ -98,11 +99,11 @@ char	**ft_split(char const *s, char c)
 	char	**res;
 
 	if (!s)
-		return (NULL);
-	res = get_res(s, c);
+		return (0);
+	res = ft_get_res(s, c);
 	if (!res)
 		return (NULL);
-	res = get_split(res, s, c);
+	res = ft_get_split(res, s, c);
 	if (!res)
 		return (NULL);
 	return (res);

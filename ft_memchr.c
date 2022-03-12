@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 16:09:57 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/10 15:13:34 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:56:21 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
-	unsigned int	x;
+	size_t			x;
 
 	x = 0;
 	str = (unsigned char *)s;

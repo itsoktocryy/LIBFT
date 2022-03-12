@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 15:07:38 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/05 21:22:43 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:53:54 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strdup(const char *s1)
 {
 	char			*ptr;
 	size_t			size;
-	unsigned int	x;
+	size_t			x;
 
 	size = ft_strlen(s1);
 	ptr = malloc(sizeof(char) * (size + 1));

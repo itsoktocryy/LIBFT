@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:36:51 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/11 13:58:13 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 13:20:27 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		x;
+	int	x;
 	char	*str;
 	char	cc;
 
