@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 15:15:50 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/12 14:04:03 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 14:14:19 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static char	**ft_get_res(char const *s, char c)
 			is_word = 0;
 		s++;
 	}
-	res = malloc(sizeof(char*) * (count + 1));
+	res = malloc(sizeof(char *) * (count + 1));
 	if (!res)
 		return (NULL);
 	res[count] = 0;

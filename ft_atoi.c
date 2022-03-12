@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:36:13 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/12 13:02:31 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/12 14:08:36 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_atoi(const char *str)
 	int					sign;
 	int					count;
 	size_t				x;
-	long int		output;
+	unsigned long		output;
 
 	x = 0;
 	sign = 1;
