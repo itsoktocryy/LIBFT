@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:38:18 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/03 15:19:58 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/13 15:18:09 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ size_t	ft_strlen(const char *s)
 // int main()
 // {
 //     char test[11] = "itsoktocryy";
-//     printf("%zu", ft_strlen(test));
+//     printf("%zu\n", ft_strlen(test));
+// 	printf("%zu", strlen(test));
 // }
