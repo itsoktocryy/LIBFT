@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 15:08:03 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/12 13:03:59 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/13 12:27:54 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,27 @@ void	*ft_calloc(size_t count, size_t size)
 
 // int main()
 // {
-//    int i, n;
-//    int *a;
-//    printf("Number of elements to be entered:");
-//    scanf("%d",&n);
-//    a = (int*)ft_calloc(n, sizeof(int));
-//    printf("Enter %d numbers:\n",n);
-//    for( i=0 ; i < n ; i++ )
-//       scanf("%d",&a[i]);
-//    printf("The numbers entered are: ");
-//    for( i=0 ; i < n ; i++ )
-//       printf("%d ",a[i]);
-//    free( a );
-//    return(0);
+// 	int count;
+// 	char *nbr;
+// 	char *loc;
+// 	int x;
+// 	x = 0;
+// 	printf("Number of elements to be entered:");
+// 	scanf("%d",&count);
+// 	loc = (char*)ft_calloc(count, sizeof(char));
+// 	printf("Enter %d numbers:\n",count);
+// 	while (x < count)
+// 	{
+// 		scanf("%s",&nbr[x]);
+// 		x++;	
+// 	}
+// 	printf("The numbers entered are: ");
+// 	x = 0;
+// 	while (x < count)
+// 	{
+// 		printf("%c ", nbr[x]);
+// 		x++;
+// 	}
+// 	free(loc);
+// 	return (0);
 // }
