@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:37:40 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/12 13:38:18 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/13 10:42:10 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		d[x] = s[x];
 		x++;
 	}
-	return (d);
+	return (dst);
 }
 
 // int main()

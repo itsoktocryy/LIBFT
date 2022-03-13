@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:37:11 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/11 23:53:09 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/13 11:27:46 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 	x = 0;
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
-	if (dstsize < 1)
-		return (src_len + dstsize);
+	if (dstsize == 0)
+		return (src_len);
 	while (src[x] && i < dstsize - 1)
 	{
 		dst[i] = src[x];
@@ -43,9 +43,9 @@ size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 // int main()
 // {
 //     char src[10] = "helloworld";
-//     char dst[50] = "tryme";   
-//     ft_strlcat(dst, src, 16);
-//     printf("%s\n", dst);
-// 	strlcat(dst, src, 16);
-// 	printf("%s\n", dst);
+//     char dst[5] = "tryme";   
+//     printf("%zu\n", ft_strlcat(dst, src, 0));
+// 	printf("%s\n\n", dst);
+// 	printf("%zu\n", strlcat(dst, src, 0));
+// 	printf("%s\n\n", dst);
 // }

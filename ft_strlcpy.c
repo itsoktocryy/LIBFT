@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:37:25 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/11 23:53:19 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/13 11:28:08 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 // int main()
 // {
 //     char src[10] = "helloworld";
-//     char dst[15] = "tryme";   
-//     ft_strlcpy(dst, src, 5);
-//     printf("%s\n", dst);
-// 	strlcpy(dst, src, 5);
-// 	printf("%s\n", dst);
+//     char dst[5] = "tryme";   
+//     printf("%zu\n",ft_strlcpy(dst, src, 0));
+//     printf("%s\n\n", dst);
+// 	printf("%zu\n",strlcpy(dst, src, 0));
+// 	printf("%s\n\n", dst);
 // }

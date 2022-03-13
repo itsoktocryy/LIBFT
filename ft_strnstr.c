@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:36:22 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/09 15:20:11 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/13 11:44:31 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 //     const char *str;
 //     const char *needle;
 //     size_t len = 11;
-//     void *s = "";
-//     void *n = "o";
+//     void *s = "itsoktocryy";
+//     void *n = "";
 //     str = (char *)s;
 //     needle = (char *)n;
 //     printf("ft_strnstr - %s\n", ft_strnstr(str, needle, len));
