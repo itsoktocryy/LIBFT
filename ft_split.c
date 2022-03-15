@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 15:15:50 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/12 14:14:19 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/14 11:37:49 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ static char	**ft_get_split(char **res, char const *s, char c)
 			res[word] = ft_get_word(&s[i], c);
 			if (!res[word])
 			{
+				word++;
 				ft_freeall(res, word);
 				return (NULL);
 			}

@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 15:08:03 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/13 12:27:54 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/15 01:23:54 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	*ft_calloc(size_t count, size_t size)
 // 	printf("Enter %d numbers:\n",count);
 // 	while (x < count)
 // 	{
-// 		scanf("%s",&nbr[x]);
+// 		scanf("%c",nbr[x]);
 // 		x++;	
 // 	}
 // 	printf("The numbers entered are: ");

@@ -6,7 +6,7 @@
 /*   By: rzachara <rzachara@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 00:37:11 by rzachara          #+#    #+#             */
-/*   Updated: 2022/03/13 11:27:46 by rzachara         ###   ########.fr       */
+/*   Updated: 2022/03/15 01:24:17 by rzachara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 // {
 //     char src[10] = "helloworld";
 //     char dst[5] = "tryme";   
-//     printf("%zu\n", ft_strlcat(dst, src, 0));
+//     printf("%zu\n", ft_strlcat(dst, src, 5));
 // 	printf("%s\n\n", dst);
-// 	printf("%zu\n", strlcat(dst, src, 0));
+// 	printf("%zu\n", strlcat(dst, src, 5));
 // 	printf("%s\n\n", dst);
 // }
